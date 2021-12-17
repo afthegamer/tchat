@@ -3,7 +3,7 @@
 /**
  * @var string chaine de caractère correspondant à un DSN pour PDO
  */
-const DB_DSN = 'mysql:host=localhost;dbname=ajax;charset=utf8';
+const DB_DSN = 'mysql:host=localhost;dbname=tchat;charset=utf8';
 
 /**
  * @var string user Mysql
