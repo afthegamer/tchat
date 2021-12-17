@@ -1,0 +1,76 @@
+html
+{
+    font-size:65%;
+    font-family: 'Sintony' ;
+}
+
+.hide
+{
+    display:none;
+}
+
+input
+{
+    border-radius:20px;
+    padding:.5em;
+    border:1px solid #999999;
+}
+
+section
+{
+    padding-bottom:10em;
+}
+
+section p
+{
+    margin:0px;
+    font-size:1.2rem;
+}
+
+section span
+{
+    color:#666666;
+    font-size:1rem;
+    padding-left:2em;
+}
+
+section div.message
+{
+    box-sizing: border-box;
+    width:50%;
+    margin-bottom:1em;
+}
+
+section div.myMessage
+{
+    margin-left:50%;
+}
+
+section div.message p
+{
+    background-color:#AAAAAA;
+    border-radius: 20px;
+    padding:1em;
+}
+
+section div.myMessage p
+{
+    background-color:#2312FF;
+    color:#FFF;
+}
+
+footer
+{
+    box-sizing: border-box;
+    position:fixed;
+    bottom:0;
+    left:0;
+    padding:1em;
+    width:100%;
+    background: rgba(255,255,255,0.8);
+}
+footer input[type=text] 
+{
+    box-sizing: border-box;
+    width:100%;
+}

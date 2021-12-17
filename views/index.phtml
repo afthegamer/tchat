@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tchat du bonheur !</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/event.js"></script>
+    <script src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Sintony&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <h1>Le chat du bonheur !</h1>
+    <section id="formUser">
+        <h2>Votre nom d'utilisateur</h2>
+        <p>Pour vous connecter merci de saisir votre nom d'utilisateur !</p>
+        <form action="#" method="POST" id="form">
+            <label for="user">Votre nom </label><input type="text" name="user" id="user"><input type="submit" value="Voir le tchat">
+        </form>
+    </section>
+
+    <section id="tchat"  class="hide">
+        <?php foreach($messages as $message) :?>
+            <div class="message">
+                <span><?= htmlspecialchars($message['m_username']) ?> <?= htmlspecialchars($message['m_create_at']) ?></span>
+                <p><?= htmlspecialchars($message['m_content']) ?></p>
+            </div>
+        <?php endforeach ?>
+    </section>
+
+    <footer class="hide">
+        <form action="add.php" method="POST" id="formMessage">
+            <input type="text" name="message" id="message" placeholder="message">
+            <input type="submit" value="Envoyer">
+        </form>
+    </footer>
+</body>
+</html>
